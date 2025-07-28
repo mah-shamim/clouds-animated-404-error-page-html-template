@@ -28,8 +28,8 @@ A well-designed 404 error page improves user retention and showcases attention t
 
 **Fonts:-**
 Free Google Fonts Used
-https://fonts.google.com/specimen/Exo+2
-https://fonts.google.com/specimen/Roboto
+- https://fonts.google.com/specimen/Exo+2
+- https://fonts.google.com/specimen/Roboto
 
 
 **Theme Functionality:-**
