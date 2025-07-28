@@ -1,0 +1,389 @@
+/* CSS File 
+======================================
+    Item Name: Clouds - Animated 404 Error Page
+    Author: umairtariq41
+    Version: 4
+    Copyright 2024
+====================================*/
+
+svg {
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(123deg, #118acf, #016a91, #1d4978, #8baefc, #5390cc, #2d83d4);
+  background-size: 1200% 1200%;
+  -webkit-animation: sky 30s ease-in-out infinite;
+  -moz-animation: sky 30s ease-in-out infinite;
+  animation: sky 30s ease-in-out infinite;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+
+/*====================================
+    Snow
+====================================*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*====================================
+    clouds
+====================================*/
+#cloud-1,
+#cloud-2,
+#cloud-3,
+#cloud-4 {
+  transform: translate(1475px, 0);
+  -webkit-animation: clouds 10s cubic-bezier(0.26, 0.69, 0.93, 0.68) infinite;
+  animation: clouds 10s cubic-bezier(0.26, 0.69, 0.93, 0.68) infinite;
+}
+
+
+/*====================================
+    stars
+====================================*/
+#Star-1,
+#Star-2,
+#Star-3,
+#Star-4,
+#Star-5,
+#Star-6,
+#Star-7,
+#Star-8,
+#Star-9,
+#Star-10,
+#Star-11,
+#Star-12,
+#Star-13,
+#Star-14 {
+  -webkit-animation: stars 30s ease-in-out infinite;
+  animation: stars 30s ease-in-out infinite;
+}
+
+@-webkit-keyframes clouds {
+  100% {
+    transform: translate(-3000px, 0px);
+  }
+}
+
+@keyframes clouds {
+  100% {
+    transform: translate(-3000px, 0px);
+  }
+}
+
+@-webkit-keyframes stars {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*====================================
+    sky
+====================================*/
+@-webkit-keyframes sky {
+  0% {
+    background-position: 0% 7%;
+  }
+
+  50% {
+    background-position: 100% 94%;
+  }
+
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@-moz-keyframes sky {
+  0% {
+    background-position: 0% 7%;
+  }
+
+  50% {
+    background-position: 100% 94%;
+  }
+
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-position: 0% 7%;
+  }
+
+  50% {
+    background-position: 100% 94%;
+  }
+
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+
+/*====================================
+    404 Section
+====================================*/
+.position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 9999;
+}
+
+.error_404 {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error_404 h1 {
+  font-size: 150px;
+  line-height: 156px;
+  margin: 0;
+  color: #ff0000;
+  text-shadow: 0px 1px 20px #f9f9f9;
+  font-family: "Exo 2", sans-serif;
+}
+
+.error_404 p {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #ff0000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px 5px #ffffff;
+  margin: 15px 0;
+}
+
+.error_404 a {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #ff0000;
+  text-decoration: none;
+  margin-top: 15px;
+  border: 2px solid #ff0000;
+  box-shadow: 0px 0px 0px 5px #ffffff;
+}
+
+.ants {
+  background-image: linear-gradient(90deg, #ff0000 50%, transparent 50%), linear-gradient(90deg, #ff0000 50%, transparent 50%), linear-gradient(0, #ff0000 50%, transparent 50%), linear-gradient(0, #ff0000 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 50px 10px, 50px 10px, 10px 50px, 10px 50px;
+  animation: marching-ants 400ms infinite linear;
+}
+
+@keyframes marching-ants {
+  0% {
+    background-position: 0 0, 50px 100%, 0 50px, 100% 0;
+  }
+
+  100% {
+    background-position: 50px 0, 0 100%, 0 0, 100% 50px;
+  }
+}
+
+
+/*====================================
+    404 Section - input box
+====================================*/
+.input-box {
+  position: relative;
+  height: 56px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box i {
+  left: 20px;
+  font-size: 26px;
+  color: #a7a7a7;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #bd2424;
+  cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+
+/*====================================
+    404 Section - info box
+====================================*/
+.info-box h3 {
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0px 1px 20px #f9f9f9;
+}
+
+.info-box ul {
+  text-align: center;
+  padding: 0;
+}
+
+.info-box ul li {
+  display: inline-block;
+  padding: 0 12px;
+  border-left: 1px solid white;
+}
+
+.info-box ul li:first-child {
+  border-left: 0;
+}
+
+.info-box ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*====================================
+    Responsive
+====================================*/
+
+@media screen and (max-width: 1199px) {
+  .error_404 h1 {
+    font-size: 130px;
+    line-height: 136px;
+  }
+
+  .error_404 p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .error_404 h1 {
+    font-size: 110px;
+    line-height: 116px;
+  }
+
+  .error_404 p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .input-box {
+    height: 50px;
+  }
+
+  .info-box h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .info-box ul li a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  svg {
+    display: none;
+  }
+
+  .position {
+    position: static;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .input-box i {
+    left: 10px;
+    font-size: 20px;
+  }
+
+  .input-box input {
+    padding: 0 155px 0 40px;
+  }
+
+  .input-box .button {
+    right: 8px;
+    font-size: 14px;
+  }
+
+  .info-box ul li {
+    padding: 0 8px;
+  }
+}
